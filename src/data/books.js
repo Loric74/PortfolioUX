@@ -1,0 +1,38 @@
+export const books = [
+  {
+    id: 'cerveau-gamer',
+    title: 'Dans le cerveau du Gamer',
+    author: 'Celia Hodent',
+    tag: 'Neurosciences & UX',
+    status: 'lu',
+    orientation: 'portrait',
+    imgSrc: 'cerveau_gamer.jpg',
+  },
+  {
+    id: 'guide-intelligents',
+    title: "Petit guide à l'usage des gens intelligents",
+    author: 'Béatrice Millètre',
+    tag: 'Développement',
+    status: 'lu',
+    orientation: 'portrait',
+    imgSrc: 'guide_gens_intelligents.jpg',
+  },
+  {
+    id: 'kit-design-thinking',
+    title: 'Le Kit du Design Thinking',
+    author: 'Lewrick · Link · Leifer',
+    tag: 'Design Thinking',
+    status: 'en-cours',
+    orientation: 'landscape',
+    imgSrc: 'Kit_design_thi_king.jpg',
+  },
+  {
+    id: 'methodes-ux',
+    title: 'Méthodes de design UX',
+    author: 'Carine Lallemand',
+    tag: 'Méthodes UX',
+    status: 'en-cours',
+    orientation: 'portrait methodes',
+    imgSrc: 'methodes_ux.jpg',
+  },
+]
