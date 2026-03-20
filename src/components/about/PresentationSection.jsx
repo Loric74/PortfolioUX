@@ -17,32 +17,47 @@ export default function PresentationSection() {
         <div className="sticky top-[100px] max-[1000px]:static max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center">
           {/* Orb rings */}
           <div className="relative w-[280px] h-[280px] flex items-center justify-center mb-8">
-            {[
-              { size: '100%', dur: '28s', dir: 'normal', clr: 'rgba(0,245,255,0.15)', dot: 'cyan', dotPos: 'top-[-4px] left-1/2 -translate-x-1/2' },
-              { size: '72%', dur: '20s', dir: 'reverse', clr: 'rgba(255,0,170,0.15)', dot: 'magenta', dotPos: 'bottom-[-4px] left-1/2 -translate-x-1/2' },
-              { size: '46%', dur: '14s', dir: 'normal', clr: 'rgba(240,255,0,0.12)', dot: 'yellow', dotPos: 'top-[-4px] right-[-4px]' },
-            ].map((r, i) => (
-              <span
-                key={i}
-                className="absolute rounded-full border relative"
-                style={{
-                  width: r.size,
-                  height: r.size,
-                  borderColor: r.clr,
-                  animation: `ringRot ${r.dur} linear infinite ${r.dir === 'reverse' ? 'reverse' : ''}`,
-                }}
-              >
-                <span
-                  className={`absolute w-2 h-2 rounded-full ${r.dotPos}`}
-                  style={{
-                    background: `var(--${r.dot})`,
-                    boxShadow: r.dot === 'cyan' ? 'var(--glow)' : r.dot === 'magenta' ? 'var(--glow-mag)' : 'none',
-                  }}
-                />
-              </span>
-            ))}
+            {/* Ring 1 — cyan, 100% */}
+            <span
+              className="absolute rounded-full border"
+              style={{
+                width: '100%', height: '100%',
+                top: '0', left: '0',
+                borderColor: 'rgba(0,245,255,0.15)',
+                animation: 'ringRot 28s linear infinite',
+              }}
+            >
+              <span className="absolute w-2 h-2 rounded-full top-[-4px] left-1/2 -translate-x-1/2"
+                style={{ background: 'var(--cyan)', boxShadow: 'var(--glow)' }} />
+            </span>
+            {/* Ring 2 — magenta, 72% */}
+            <span
+              className="absolute rounded-full border"
+              style={{
+                width: '72%', height: '72%',
+                top: '14%', left: '14%',
+                borderColor: 'rgba(255,0,170,0.15)',
+                animation: 'ringRot 20s linear infinite reverse',
+              }}
+            >
+              <span className="absolute w-2 h-2 rounded-full bottom-[-4px] left-1/2 -translate-x-1/2"
+                style={{ background: 'var(--magenta)', boxShadow: 'var(--glow-mag)' }} />
+            </span>
+            {/* Ring 3 — yellow, 46% */}
+            <span
+              className="absolute rounded-full border"
+              style={{
+                width: '46%', height: '46%',
+                top: '27%', left: '27%',
+                borderColor: 'rgba(240,255,0,0.12)',
+                animation: 'ringRot 14s linear infinite',
+              }}
+            >
+              <span className="absolute w-2 h-2 rounded-full top-[-4px] right-[-4px]"
+                style={{ background: 'var(--yellow)' }} />
+            </span>
             <div className="w-[110px] h-[110px] rounded-full bg-gradient-to-br from-[rgba(0,245,255,0.1)] to-[rgba(255,0,170,0.08)] border-2 border-[rgba(0,245,255,0.25)] flex items-center justify-center text-[3.5rem] z-[2] shadow-cyan">
-              🎨
+              ✦
             </div>
           </div>
 
@@ -55,8 +70,8 @@ export default function PresentationSection() {
               { k: 'Langues', v: 'FR · EN C1' },
             ].map(({ k, v }) => (
               <div key={k} className="flex justify-between py-2.5 border-b border-[rgba(0,245,255,0.06)]">
-                <span className="font-mono text-[0.65rem] text-[rgba(200,232,240,0.35)] tracking-[0.1em] uppercase">{k}</span>
-                <span className="font-mono text-[0.72rem] text-[rgba(200,232,240,0.75)]">{v}</span>
+                <span className="font-mono text-[0.65rem] text-[rgba(230,230,230,0.35)] tracking-[0.1em] uppercase">{k}</span>
+                <span className="font-mono text-[0.72rem] text-[rgba(230,230,230,0.75)]">{v}</span>
               </div>
             ))}
           </div>
@@ -101,7 +116,7 @@ export default function PresentationSection() {
               <span className="font-mono text-[0.68rem] tracking-[0.3em] text-cyan uppercase opacity-60 mt-7 mb-2.5 block">
                 {label}
               </span>
-              <p className="text-[1rem] leading-[1.85] text-[rgba(200,232,240,0.7)] mb-2.5">{text}</p>
+              <p className="text-[1rem] leading-[1.85] text-[rgba(230,230,230,0.7)] mb-2.5">{text}</p>
             </div>
           ))}
 

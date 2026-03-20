@@ -37,7 +37,7 @@ export default function ServicesGrid() {
               <h3 className="font-orbitron text-[0.9rem] font-semibold text-white mb-3.5 leading-snug">
                 {s.name}
               </h3>
-              <p className="text-[0.88rem] leading-[1.7] text-[rgba(200,232,240,0.55)]">
+              <p className="text-[0.88rem] leading-[1.7] text-[rgba(230,230,230,0.55)]">
                 {s.desc}
               </p>
             </div>

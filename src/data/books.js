@@ -6,7 +6,7 @@ export const books = [
     tag: 'Neurosciences & UX',
     status: 'lu',
     orientation: 'portrait',
-    imgSrc: 'cerveau_gamer.jpg',
+    imgSrc: '/cerveau_gamer.jpg',
   },
   {
     id: 'guide-intelligents',
@@ -15,7 +15,7 @@ export const books = [
     tag: 'Développement',
     status: 'lu',
     orientation: 'portrait',
-    imgSrc: 'guide_gens_intelligents.jpg',
+    imgSrc: '/guide_gens_intelligents.jpg',
   },
   {
     id: 'kit-design-thinking',
@@ -24,7 +24,7 @@ export const books = [
     tag: 'Design Thinking',
     status: 'en-cours',
     orientation: 'landscape',
-    imgSrc: 'Kit_design_thi_king.jpg',
+    imgSrc: '/Kit_design_thi_king.jpg',
   },
   {
     id: 'methodes-ux',
@@ -33,6 +33,6 @@ export const books = [
     tag: 'Méthodes UX',
     status: 'en-cours',
     orientation: 'portrait methodes',
-    imgSrc: 'methodes_ux.jpg',
+    imgSrc: '/methodes_ux.jpg',
   },
 ]

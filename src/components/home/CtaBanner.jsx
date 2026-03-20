@@ -9,7 +9,7 @@ export default function CtaBanner() {
         <h3 className="font-orbitron text-[1.4rem] font-bold text-white mb-2">
           Travaillons <span className="text-cyan text-glow-cyan">ensemble</span>
         </h3>
-        <p className="text-[0.95rem] text-[rgba(200,232,240,0.5)]">
+        <p className="text-[0.95rem] text-[rgba(230,230,230,0.5)]">
           Ouvert aux missions CDI, freelance et collaborations sur des projets ambitieux
         </p>
       </div>

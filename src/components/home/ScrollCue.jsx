@@ -8,7 +8,7 @@ export default function ScrollCue() {
         className="w-px h-[50px] bg-gradient-to-b from-cyan to-transparent"
         style={{ animation: 'arrowDrop 1.8s ease infinite' }}
       />
-      <span className="font-mono text-[0.6rem] tracking-[0.3em] text-[rgba(200,232,240,0.3)]">Scroll</span>
+      <span className="font-mono text-[0.6rem] tracking-[0.3em] text-[rgba(230,230,230,0.3)]">Scroll</span>
     </div>
   )
 }

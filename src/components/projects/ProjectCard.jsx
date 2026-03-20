@@ -23,7 +23,7 @@ export default function ProjectCard({ project, onOpenModal, listView }) {
         </div>
         <span className="absolute top-3 left-3.5 font-mono text-[0.6rem] text-[rgba(0,245,255,0.35)] tracking-[0.2em] z-[2]">{p.num}</span>
         <span className="absolute top-3 right-3.5 font-mono text-[0.6rem] px-2.5 py-[3px] bg-[rgba(0,245,255,0.08)] border border-[rgba(0,245,255,0.18)] text-cyan tracking-[0.12em] z-[2]">{p.type}</span>
-        <span className="absolute bottom-3 left-3.5 font-mono text-[0.6rem] text-[rgba(200,232,240,0.25)] z-[2]">{p.year}</span>
+        <span className="absolute bottom-3 left-3.5 font-mono text-[0.6rem] text-[rgba(230,230,230,0.25)] z-[2]">{p.year}</span>
       </div>
 
       {/* Body */}
@@ -37,12 +37,12 @@ export default function ProjectCard({ project, onOpenModal, listView }) {
         </div>
 
         <h3 className="font-orbitron text-[0.95rem] font-bold text-white mb-2.5 leading-snug">{p.title}</h3>
-        <p className="text-[0.84rem] leading-[1.7] text-[rgba(200,232,240,0.55)] mb-4">{p.desc}</p>
+        <p className="text-[0.84rem] leading-[1.7] text-[rgba(230,230,230,0.55)] mb-4">{p.desc}</p>
 
         <div className="flex justify-between items-center pt-3.5 border-t border-[rgba(0,245,255,0.07)]">
           <div className="flex gap-2.5">
             {p.tools.map((t) => (
-              <span key={t} className="font-mono text-[0.62rem] text-[rgba(200,232,240,0.35)] tracking-[0.08em] flex items-center gap-1 before:content-[\'\'] before:w-1 before:h-1 before:rounded-full before:bg-[rgba(0,245,255,0.4)]">
+              <span key={t} className="font-mono text-[0.62rem] text-[rgba(230,230,230,0.35)] tracking-[0.08em] flex items-center gap-1 before:content-[\'\'] before:w-1 before:h-1 before:rounded-full before:bg-[rgba(0,245,255,0.4)]">
                 {t}
               </span>
             ))}

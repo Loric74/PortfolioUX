@@ -25,14 +25,14 @@ export default function HeroSection() {
         </h1>
 
         <p
-          className="font-mono text-[0.9rem] tracking-[0.3em] text-[rgba(200,232,240,0.45)] uppercase mb-8 mt-4"
+          className="font-mono text-[0.9rem] tracking-[0.3em] text-[rgba(230,230,230,0.45)] uppercase mb-8 mt-4"
           style={{ animation: 'fadeUp 0.8s ease 0.3s both' }}
         >
           // UX Designer Junior
         </p>
 
         <p
-          className="text-[1.05rem] leading-[1.8] text-[rgba(200,232,240,0.65)] max-w-[480px] mb-11 border-l-2 border-[rgba(0,245,255,0.2)] pl-5"
+          className="text-[1.05rem] leading-[1.8] text-[rgba(230,230,230,0.65)] max-w-[480px] mb-11 border-l-2 border-[rgba(0,245,255,0.2)] pl-5"
           style={{ animation: 'fadeUp 0.8s ease 0.45s both' }}
         >
           Je conçois des expériences numériques qui mettent l'humain au centre. Recherche, prototypage, tests — chaque décision de design est guidée par les données et l'empathie.

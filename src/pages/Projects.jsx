@@ -18,13 +18,13 @@ export default function Projects() {
   return (
     <>
       <PageHeader
-        label="Portfolio // BL-001"
+        label="Réalisations // Portfolio"
         title="Mes"
         titleHighlight="Projets"
         meta={[
-          '3 études de cas',
-          'UX Research · UI Design · No-code',
-          '2023 – 2025',
+          '3 projets',
+          'UX Research · UI Design · Design System',
+          '2021 — 2025',
         ]}
       />
 

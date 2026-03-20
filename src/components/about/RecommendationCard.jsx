@@ -30,7 +30,7 @@ export default function RecommendationCard() {
             ))}
           </div>
 
-          <p className="text-[1rem] leading-[1.85] text-[rgba(200,232,240,0.78)] mb-8 italic whitespace-pre-line">
+          <p className="text-[1rem] leading-[1.85] text-[rgba(230,230,230,0.78)] mb-8 italic whitespace-pre-line">
             {t.text}
           </p>
 
@@ -40,7 +40,7 @@ export default function RecommendationCard() {
             </div>
             <div>
               <span className="font-mono text-[0.88rem] text-cyan block">{t.author.name}</span>
-              <span className="text-[0.78rem] text-[rgba(200,232,240,0.4)] tracking-[0.08em]">{t.author.role}</span>
+              <span className="text-[0.78rem] text-[rgba(230,230,230,0.4)] tracking-[0.08em]">{t.author.role}</span>
             </div>
           </div>
         </div>

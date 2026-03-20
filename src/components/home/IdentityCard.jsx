@@ -35,15 +35,15 @@ export default function IdentityCard() {
           { label: 'Localisation', value: 'France 🇫🇷' },
         ].map(({ label, value }) => (
           <div key={label} className="flex justify-between items-center">
-            <span className="font-mono text-[0.6rem] text-[rgba(200,232,240,0.35)] tracking-[0.1em] uppercase">{label}</span>
-            <span className="font-mono text-[0.7rem] text-[rgba(200,232,240,0.8)]">{value}</span>
+            <span className="font-mono text-[0.6rem] text-[rgba(230,230,230,0.35)] tracking-[0.1em] uppercase">{label}</span>
+            <span className="font-mono text-[0.7rem] text-[rgba(230,230,230,0.8)]">{value}</span>
           </div>
         ))}
         <div className="flex justify-between items-center">
-          <span className="font-mono text-[0.6rem] text-[rgba(200,232,240,0.35)] tracking-[0.1em] uppercase">Statut</span>
+          <span className="font-mono text-[0.6rem] text-[rgba(230,230,230,0.35)] tracking-[0.1em] uppercase">Statut</span>
           <div className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan shadow-cyan animate-pulse-dot" />
-            <span className="font-mono text-[0.7rem] text-[rgba(200,232,240,0.8)]">Actif</span>
+            <span className="font-mono text-[0.7rem] text-[rgba(230,230,230,0.8)]">Actif</span>
           </div>
         </div>
       </div>

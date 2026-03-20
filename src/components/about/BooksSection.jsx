@@ -54,7 +54,7 @@ export default function BooksSection() {
               <div className="px-4 pt-3.5 pb-4 border-t border-[rgba(0,245,255,0.07)]">
                 <p className="font-orbitron text-[0.65rem] font-semibold text-white mb-1 leading-snug">{book.title}</p>
                 <p className="font-mono text-[0.6rem] text-cyan opacity-60 mb-2">{book.author}</p>
-                <span className="font-mono text-[0.6rem] tracking-[0.08em] px-2.5 py-[3px] bg-[rgba(0,245,255,0.05)] border border-[rgba(0,245,255,0.12)] text-[rgba(200,232,240,0.45)] inline-block">
+                <span className="font-mono text-[0.6rem] tracking-[0.08em] px-2.5 py-[3px] bg-[rgba(0,245,255,0.05)] border border-[rgba(0,245,255,0.12)] text-[rgba(230,230,230,0.45)] inline-block">
                   {book.tag}
                 </span>
               </div>

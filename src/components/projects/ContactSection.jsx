@@ -10,7 +10,7 @@ export default function ContactSection() {
           <h3 className="font-orbitron text-[1.6rem] font-bold text-white mb-2.5">
             Vous avez un <span className="text-cyan text-glow-cyan">projet</span> ?
           </h3>
-          <p className="text-[1rem] text-[rgba(200,232,240,0.5)] max-w-[420px] leading-[1.7]">
+          <p className="text-[1rem] text-[rgba(230,230,230,0.5)] max-w-[420px] leading-[1.7]">
             Je suis disponible pour des missions freelance, des postes CDI et toutes les collaborations qui ont de l'ambition. Parlons-en !
           </p>
         </div>
@@ -18,7 +18,7 @@ export default function ContactSection() {
         <div className="flex flex-col gap-3 flex-shrink-0 relative z-[1] min-w-[220px]">
           <a
             href="mailto:contact@belmainloric.fr"
-            className="font-mono text-[0.72rem] tracking-[0.12em] px-5 py-3.5 border border-[rgba(0,245,255,0.2)] text-[rgba(200,232,240,0.6)] bg-[rgba(0,245,255,0.02)] no-underline uppercase flex items-center gap-2.5 transition-all duration-300 hover:border-cyan hover:text-cyan hover:bg-[rgba(0,245,255,0.05)] hover:shadow-cyan"
+            className="font-mono text-[0.72rem] tracking-[0.12em] px-5 py-3.5 border border-[rgba(0,245,255,0.2)] text-[rgba(230,230,230,0.6)] bg-[rgba(0,245,255,0.02)] no-underline uppercase flex items-center gap-2.5 transition-all duration-300 hover:border-cyan hover:text-cyan hover:bg-[rgba(0,245,255,0.05)] hover:shadow-cyan"
           >
             <Mail size={16} />
             contact@belmainloric.fr

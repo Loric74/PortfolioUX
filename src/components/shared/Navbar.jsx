@@ -7,7 +7,7 @@ export default function Navbar() {
       'after:content-[\'\'] after:absolute after:bottom-[-4px] after:left-0 after:h-px after:transition-all after:duration-300',
       isActive
         ? 'text-cyan after:w-full after:bg-cyan after:shadow-cyan'
-        : 'text-[rgba(200,232,240,0.55)] after:w-0 after:bg-cyan hover:text-cyan hover:after:w-full',
+        : 'text-[rgba(230,230,230,0.55)] after:w-0 after:bg-cyan hover:text-cyan hover:after:w-full',
     ].join(' ')
 
   return (

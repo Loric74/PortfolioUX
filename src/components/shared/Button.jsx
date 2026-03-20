@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const variants = {
   cyan: 'text-cyan border-cyan shadow-cyan clip-btn hover:bg-cyan hover:text-bg',
   mag: 'text-magenta border-magenta shadow-mag clip-btn hover:bg-magenta hover:text-bg',
-  ghost: 'text-[rgba(200,232,240,0.5)] border-[rgba(200,232,240,0.15)] clip-btn-sm hover:bg-[rgba(200,232,240,0.1)]',
+  ghost: 'text-[rgba(230,230,230,0.5)] border-[rgba(230,230,230,0.15)] clip-btn-sm hover:bg-[rgba(230,230,230,0.1)]',
 }
 
 export default function Button({ variant = 'cyan', href, to, onClick, children, className = '' }) {

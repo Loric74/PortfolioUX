@@ -15,14 +15,14 @@ export default function PageHeader({ label, title, titleHighlight, subtitle, met
         )}
       </h1>
       {subtitle && (
-        <p className="text-[1.05rem] text-[rgba(200,232,240,0.5)] mt-4 max-w-[500px] leading-[1.7]">
+        <p className="text-[1.05rem] text-[rgba(230,230,230,0.5)] mt-4 max-w-[500px] leading-[1.7]">
           {subtitle}
         </p>
       )}
       {meta && (
         <div className="flex items-center gap-8 mt-6 flex-wrap">
           {meta.map((item, i) => (
-            <span key={i} className="font-mono text-[0.72rem] text-[rgba(200,232,240,0.4)] tracking-[0.15em] flex items-center gap-2">
+            <span key={i} className="font-mono text-[0.72rem] text-[rgba(230,230,230,0.4)] tracking-[0.15em] flex items-center gap-2">
               <span className="w-[5px] h-[5px] rounded-full bg-cyan" />
               {item}
             </span>

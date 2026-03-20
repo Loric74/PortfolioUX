@@ -48,7 +48,7 @@ export default function ProcessSteps() {
             />
             <p className="font-mono text-[0.6rem] text-[rgba(0,245,255,0.35)] tracking-[0.2em] mb-2">{step.ref}</p>
             <p className="font-orbitron text-[0.78rem] font-semibold text-white mb-2">{step.name}</p>
-            <p className="text-[0.82rem] leading-[1.6] text-[rgba(200,232,240,0.45)]">{step.desc}</p>
+            <p className="text-[0.82rem] leading-[1.6] text-[rgba(230,230,230,0.45)]">{step.desc}</p>
           </div>
         ))}
       </div>

@@ -4,6 +4,48 @@ import { featuredProject, projects } from '../../data/projects'
 
 const allProjects = [featuredProject, ...projects]
 
+function ProcessBlock({ block }) {
+  switch (block.type) {
+    case 'step-label':
+      return (
+        <span className="font-mono text-[0.62rem] tracking-[0.35em] text-magenta text-opacity-80 uppercase mt-5 mb-1.5 block">
+          {block.text}
+        </span>
+      )
+    case 'step-title':
+      return (
+        <h4 className="font-orbitron text-[0.9rem] font-bold text-white mb-2.5 mt-1">{block.text}</h4>
+      )
+    case 'text':
+      return (
+        <p className="text-[0.9rem] leading-[1.75] text-[rgba(230,230,230,0.65)] mb-2">{block.text}</p>
+      )
+    case 'text-bold':
+      return (
+        <p className="text-[0.9rem] leading-[1.75] text-[rgba(230,230,230,0.85)] font-semibold mt-3 mb-1">{block.text}</p>
+      )
+    case 'list':
+      return (
+        <ul className="flex flex-col gap-2 my-2 list-none">
+          {block.items.map((item, i) => (
+            <li key={i} className="text-[0.9rem] leading-[1.7] text-[rgba(230,230,230,0.65)] flex items-start gap-2.5">
+              <span className="text-cyan text-glow-cyan text-[1.1rem] leading-[1.4] flex-shrink-0">›</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      )
+    case 'placeholder':
+      return (
+        <div className="w-full h-10 bg-[rgba(0,245,255,0.03)] border border-dashed border-[rgba(0,245,255,0.2)] flex items-center justify-center my-3.5 font-mono text-[0.68rem] text-[rgba(0,245,255,0.4)] tracking-[0.12em]">
+          {block.text}
+        </div>
+      )
+    default:
+      return null
+  }
+}
+
 export default function ProjectModal({ projectId, onClose }) {
   const p = allProjects.find((proj) => proj.id === projectId)
 
@@ -24,7 +66,7 @@ export default function ProjectModal({ projectId, onClose }) {
         {/* Close */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 w-9 h-9 border border-[rgba(0,245,255,0.2)] bg-transparent text-[rgba(200,232,240,0.5)] cursor-pointer flex items-center justify-center transition-all duration-300 hover:border-magenta hover:text-magenta"
+          className="absolute top-5 right-5 w-9 h-9 border border-[rgba(0,245,255,0.2)] bg-transparent text-[rgba(230,230,230,0.5)] cursor-pointer flex items-center justify-center transition-all duration-300 hover:border-magenta hover:text-magenta"
         >
           <X size={16} />
         </button>
@@ -36,20 +78,20 @@ export default function ProjectModal({ projectId, onClose }) {
         {/* Context */}
         <div className="mb-6">
           <p className="font-orbitron text-[0.78rem] font-semibold text-cyan tracking-[0.2em] mb-2.5 pb-1.5 border-b border-[rgba(0,245,255,0.1)]">
-            Contexte
+            // Contexte
           </p>
-          <p className="text-[0.9rem] leading-[1.75] text-[rgba(200,232,240,0.65)]">{p.context}</p>
+          <p className="text-[0.9rem] leading-[1.75] text-[rgba(230,230,230,0.65)]">{p.context}</p>
         </div>
 
         {/* Objectives */}
         {p.objectives && (
           <div className="mb-6">
             <p className="font-orbitron text-[0.78rem] font-semibold text-cyan tracking-[0.2em] mb-2.5 pb-1.5 border-b border-[rgba(0,245,255,0.1)]">
-              Objectifs
+              // Objectifs
             </p>
             <ul className="flex flex-col gap-2 mt-2 list-none">
               {p.objectives.map((o, i) => (
-                <li key={i} className="text-[0.9rem] leading-[1.7] text-[rgba(200,232,240,0.65)] flex items-start gap-2.5">
+                <li key={i} className="text-[0.9rem] leading-[1.7] text-[rgba(230,230,230,0.65)] flex items-start gap-2.5">
                   <span className="text-cyan text-glow-cyan text-[1.1rem] leading-[1.4] flex-shrink-0">›</span>
                   {o}
                 </li>
@@ -58,13 +100,25 @@ export default function ProjectModal({ projectId, onClose }) {
           </div>
         )}
 
-        {/* Process */}
-        {p.process && (
+        {/* Process — structured content */}
+        {p.processContent && (
           <div className="mb-6">
             <p className="font-orbitron text-[0.78rem] font-semibold text-cyan tracking-[0.2em] mb-2.5 pb-1.5 border-b border-[rgba(0,245,255,0.1)]">
-              Process
+              // Process
             </p>
-            <p className="text-[0.9rem] leading-[1.75] text-[rgba(200,232,240,0.65)]">{p.process}</p>
+            {p.processContent.map((block, i) => (
+              <ProcessBlock key={i} block={block} />
+            ))}
+          </div>
+        )}
+
+        {/* Process — plain text fallback */}
+        {!p.processContent && p.process && (
+          <div className="mb-6">
+            <p className="font-orbitron text-[0.78rem] font-semibold text-cyan tracking-[0.2em] mb-2.5 pb-1.5 border-b border-[rgba(0,245,255,0.1)]">
+              // Process
+            </p>
+            <p className="text-[0.9rem] leading-[1.75] text-[rgba(230,230,230,0.65)]">{p.process}</p>
           </div>
         )}
 
@@ -72,9 +126,9 @@ export default function ProjectModal({ projectId, onClose }) {
         {p.result && (
           <div className="mb-6">
             <p className="font-orbitron text-[0.78rem] font-semibold text-cyan tracking-[0.2em] mb-2.5 pb-1.5 border-b border-[rgba(0,245,255,0.1)]">
-              Résultat
+              // Résultats
             </p>
-            <p className="text-[0.9rem] leading-[1.75] text-[rgba(200,232,240,0.65)]">{p.result}</p>
+            <p className="text-[0.9rem] leading-[1.75] text-[rgba(230,230,230,0.65)]">{p.result}</p>
           </div>
         )}
 
@@ -84,7 +138,7 @@ export default function ProjectModal({ projectId, onClose }) {
             {p.metrics.map((m) => (
               <div key={m.label} className="text-center px-5 py-4 bg-[rgba(0,245,255,0.03)] border border-[rgba(0,245,255,0.08)]">
                 <span className="font-orbitron text-[1.3rem] font-bold text-cyan text-glow-cyan block">{m.val}</span>
-                <span className="font-mono text-[0.6rem] text-[rgba(200,232,240,0.35)] tracking-[0.1em] mt-1 block">{m.label}</span>
+                <span className="font-mono text-[0.6rem] text-[rgba(230,230,230,0.35)] tracking-[0.1em] mt-1 block">{m.label}</span>
               </div>
             ))}
           </div>
@@ -94,11 +148,11 @@ export default function ProjectModal({ projectId, onClose }) {
         {p.tools && (
           <div className="mb-6">
             <p className="font-orbitron text-[0.78rem] font-semibold text-cyan tracking-[0.2em] mb-2.5 pb-1.5 border-b border-[rgba(0,245,255,0.1)]">
-              Outils
+              // Outils utilisés
             </p>
             <div className="flex gap-2.5 flex-wrap mt-2">
               {p.tools.map((t) => (
-                <span key={t} className="font-mono text-[0.68rem] px-3.5 py-[5px] bg-[rgba(0,245,255,0.04)] border border-[rgba(0,245,255,0.1)] text-[rgba(200,232,240,0.5)] tracking-[0.08em]">
+                <span key={t} className="font-mono text-[0.68rem] px-3.5 py-[5px] bg-[rgba(0,245,255,0.04)] border border-[rgba(0,245,255,0.1)] text-[rgba(230,230,230,0.5)] tracking-[0.08em]">
                   {t}
                 </span>
               ))}
