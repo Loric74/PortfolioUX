@@ -69,12 +69,15 @@ export default function FeaturedProject({ onOpenModal }) {
             >
               Voir le cas d'étude
             </button>
-            <button
-              className="font-mono text-[0.78rem] tracking-[0.18em] px-8 py-3.5 uppercase border border-[rgba(230,230,230,0.15)] text-[rgba(230,230,230,0.5)] bg-transparent clip-btn-sm transition-all duration-300 hover:bg-[rgba(230,230,230,0.1)]"
+            <a
+              href="https://www.figma.com/proto/5zGOf49vAteTeuTEcGCEFN/Design---Les-Bambinets?page-id=7587%3A2&node-id=7590-889&p=f&viewport=577%2C-337%2C0.41&t=yc6Jyy0IVEE0bz7k-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7590%3A889&show-proto-sidebar=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-[0.78rem] tracking-[0.18em] px-8 py-3.5 uppercase border border-[rgba(230,230,230,0.15)] text-[rgba(230,230,230,0.5)] bg-transparent clip-btn-sm transition-all duration-300 hover:bg-[rgba(230,230,230,0.1)] no-underline"
               onClick={(e) => e.stopPropagation()}
             >
               Prototype Figma
-            </button>
+            </a>
           </div>
         </div>
       </div>

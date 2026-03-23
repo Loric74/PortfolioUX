@@ -9,20 +9,6 @@ export default function Footer() {
         © 2025 Belmain Loric · UX Designer Junior · Tous droits réservés
       </p>
 
-      <div className="flex gap-5">
-        <a
-          href="#"
-          className="font-mono text-[0.7rem] text-[rgba(230,230,230,0.35)] no-underline tracking-[0.1em] transition-colors duration-300 hover:text-cyan"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="#"
-          className="font-mono text-[0.7rem] text-[rgba(230,230,230,0.35)] no-underline tracking-[0.1em] transition-colors duration-300 hover:text-cyan"
-        >
-          Behance
-        </a>
-      </div>
     </footer>
   )
 }

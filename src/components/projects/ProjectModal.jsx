@@ -41,6 +41,19 @@ function ProcessBlock({ block }) {
           {block.text}
         </div>
       )
+    case 'figma-link':
+      return (
+        <div className="flex justify-center my-4">
+          <a
+            href={block.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-mono text-[0.72rem] tracking-[0.15em] px-6 py-3 border border-cyan text-cyan bg-[rgba(0,245,255,0.04)] transition-all duration-300 hover:bg-[rgba(0,245,255,0.12)] no-underline"
+          >
+            {block.text}
+          </a>
+        </div>
+      )
     default:
       return null
   }
@@ -59,10 +72,10 @@ export default function ProjectModal({ projectId, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-[500] bg-[rgba(2,8,18,0.92)] backdrop-blur-[8px] flex items-center justify-center px-5 py-[60px]"
+      className="fixed inset-0 z-[500] bg-[rgba(2,8,18,0.92)] backdrop-blur-[8px] flex items-center justify-center p-8 max-[700px]:p-4"
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
-      <div className="max-w-[780px] w-full bg-bg2 border border-[rgba(0,245,255,0.2)] p-12 relative clip-card-32 max-h-[80vh] overflow-y-auto">
+      <div className="w-full max-w-[1200px] bg-bg2 border border-[rgba(0,245,255,0.2)] p-12 relative clip-card-32 max-h-[90vh] overflow-y-auto max-[700px]:p-6">
         {/* Close */}
         <button
           onClick={onClose}
@@ -134,7 +147,7 @@ export default function ProjectModal({ projectId, onClose }) {
 
         {/* Metrics */}
         {p.metrics && (
-          <div className="flex gap-6 flex-wrap my-4">
+          <div className="flex gap-6 flex-wrap my-4 justify-center">
             {p.metrics.map((m) => (
               <div key={m.label} className="text-center px-5 py-4 bg-[rgba(0,245,255,0.03)] border border-[rgba(0,245,255,0.08)]">
                 <span className="font-orbitron text-[1.3rem] font-bold text-cyan text-glow-cyan block">{m.val}</span>

@@ -50,7 +50,7 @@ export const featuredProject = {
     { type: "step-title", text: "Prototype interactif" },
     { type: "text", text: "Un prototype interactif complet a été réalisé sur Figma afin de simuler les parcours principaux : navigation dans le glossaire, consultation d'un signe en vidéo, ajout en favoris, accès au quiz et navigation entre catégories." },
     { type: "text", text: "Ce prototype permet de tester la fluidité des parcours et la compréhension de l'interface dans un contexte d'usage mobile. Il sert également de support de présentation et de validation du concept." },
-    { type: "placeholder", text: "↑ Visuel à placer — gif ou mockup prototype" },
+    { type: "figma-link", href: "https://www.figma.com/proto/5zGOf49vAteTeuTEcGCEFN/Design---Les-Bambinets?page-id=7587%3A2&node-id=7590-889&p=f&viewport=577%2C-337%2C0.41&t=yc6Jyy0IVEE0bz7k-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7590%3A889&show-proto-sidebar=1", text: "Voir le prototype sur Figma →" },
   ],
   result: "Prototype fonctionnel d'application d'apprentissage du vocabulaire en langue des signes pour parents et professionnels de la petite enfance. L'expérience facilite l'accès aux signes du quotidien et leur appropriation progressive dans les interactions avec l'enfant. Interface bienveillante, lisible sur mobile, mettant en valeur la vidéo comme média principal d'apprentissage.",
 }

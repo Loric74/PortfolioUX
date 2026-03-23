@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import PageHeader from '../components/about/PageHeader'
-import FiltersBar from '../components/projects/FiltersBar'
 import FeaturedProject from '../components/projects/FeaturedProject'
 import ProjectsGrid from '../components/projects/ProjectsGrid'
 import ContactSection from '../components/projects/ContactSection'
@@ -8,12 +7,7 @@ import ProjectModal from '../components/projects/ProjectModal'
 import { projects } from '../data/projects'
 
 export default function Projects() {
-  const [activeFilter, setActiveFilter] = useState('all')
   const [openModalId, setOpenModalId] = useState(null)
-
-  const filtered = activeFilter === 'all'
-    ? projects
-    : projects.filter((p) => p.filterTags.includes(activeFilter))
 
   return (
     <>
@@ -21,22 +15,11 @@ export default function Projects() {
         label="Réalisations // Portfolio"
         title="Mes"
         titleHighlight="Projets"
-        meta={[
-          '3 projets',
-          'UX Research · UI Design · Design System',
-          '2021 — 2025',
-        ]}
-      />
-
-      <FiltersBar
-        activeFilter={activeFilter}
-        onFilter={setActiveFilter}
-        count={filtered.length + 1}
       />
 
       <FeaturedProject onOpenModal={setOpenModalId} />
 
-      <ProjectsGrid projects={filtered} onOpenModal={setOpenModalId} />
+      <ProjectsGrid projects={projects} onOpenModal={setOpenModalId} />
 
       <ContactSection />
 
