@@ -33,7 +33,7 @@ export default function RoadmapGrid() {
                 Objectif — {item.objective}
               </p>
 
-              <span className="font-mono text-[0.62rem] tracking-[0.2em] uppercase opacity-60 mb-2 mt-3.5 block text-cyan">
+              <span className="font-mono text-[0.75rem] tracking-[0.2em] uppercase font-bold opacity-80 mb-2 mt-3.5 block text-cyan">
                 // Actions
               </span>
               <div className="flex flex-col gap-1.5">
@@ -46,7 +46,7 @@ export default function RoadmapGrid() {
 
               {item.tools.length > 0 && (
                 <>
-                  <span className="font-mono text-[0.62rem] tracking-[0.2em] uppercase opacity-60 mb-2 mt-3.5 block text-cyan">
+                  <span className="font-mono text-[0.75rem] tracking-[0.2em] uppercase font-bold opacity-80 mb-2 mt-3.5 block text-cyan">
                     // {item.week.includes('5') || item.week.includes('6') || item.week.includes('7') || item.week.includes('8') ? 'Plateformes' : 'Outils'}
                   </span>
                   <div className="flex gap-2 flex-wrap mt-2.5">
