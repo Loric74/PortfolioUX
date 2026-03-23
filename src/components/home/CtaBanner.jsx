@@ -22,7 +22,9 @@ export default function CtaBanner() {
           Voir les projets
         </Link>
         <a
-          href="mailto:contact@belmainloric.fr"
+          href="https://mail.google.com/mail/?view=cm&to=loricbelmain@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="font-mono text-[0.78rem] tracking-[0.18em] px-8 py-3.5 uppercase border border-magenta text-magenta bg-transparent shadow-mag clip-btn transition-all duration-300 hover:bg-magenta hover:text-bg"
         >
           Me contacter

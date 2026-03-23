@@ -15,13 +15,13 @@ export default function ServicesGrid() {
         Mes <span className="text-cyan text-glow-cyan">expertises</span>
       </h2>
 
-      <div className="grid grid-cols-3 gap-6 max-[900px]:grid-cols-1">
+      <div className="grid grid-cols-4 gap-4 max-[900px]:grid-cols-2 max-[500px]:grid-cols-1">
         {services.map((s) => {
           const Icon = iconMap[s.icon]
           return (
             <div
               key={s.num}
-              className="service-card bg-gradient-to-br from-[rgba(0,245,255,0.02)] to-[rgba(255,0,170,0.02)] border border-[rgba(0,245,255,0.1)] p-9 px-7 relative overflow-hidden clip-card transition-all duration-400 cursor-default hover:border-[rgba(0,245,255,0.35)] hover:shadow-cyan hover:-translate-y-1 group"
+              className="service-card bg-gradient-to-br from-[rgba(0,245,255,0.02)] to-[rgba(255,0,170,0.02)] border border-[rgba(0,245,255,0.1)] p-6 px-5 relative overflow-hidden clip-card transition-all duration-400 cursor-default hover:border-[rgba(0,245,255,0.35)] hover:shadow-cyan hover:-translate-y-1 group"
             >
               {/* Bottom gradient bar on hover */}
               <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-cyan to-magenta scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
