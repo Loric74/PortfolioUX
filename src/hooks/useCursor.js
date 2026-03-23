@@ -8,6 +8,7 @@ export function useCursor() {
     const cursor = cursorRef.current
     const trail = trailRef.current
     if (!cursor || !trail) return
+    if (window.matchMedia('(pointer: coarse)').matches) return
 
     let mx = 0, my = 0, tx = 0, ty = 0
     let rafId
