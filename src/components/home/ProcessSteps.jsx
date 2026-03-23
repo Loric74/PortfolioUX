@@ -28,7 +28,7 @@ export default function ProcessSteps() {
             {/* Connector line (mobile vertical) */}
             {i < processSteps.length - 1 && (
               <span
-                className="hidden max-[900px]:block absolute left-[30px] top-[60px] bottom-0 w-px bg-gradient-to-b from-[rgba(0,245,255,0.4)] to-[rgba(255,0,170,0.2)] z-0"
+                className="hidden max-[900px]:block absolute left-[42px] top-[60px] bottom-0 w-px bg-gradient-to-b from-[rgba(0,245,255,0.4)] to-[rgba(255,0,170,0.2)] z-0"
                 aria-hidden
               />
             )}
@@ -49,11 +49,7 @@ export default function ProcessSteps() {
               <span className="absolute top-[-2px] right-[calc(50%-30px)] w-2 h-2 border-t border-r border-cyan opacity-40" />
             </div>
 
-            <div className="max-[900px]:pt-1">
-              <span
-                className="block w-1.5 h-1.5 rounded-full bg-cyan shadow-cyan mx-auto mb-2 animate-pulse-dot max-[900px]:mx-0"
-                style={{ animationDelay: `${i * 0.5}s` }}
-              />
+            <div>
               <p className="font-mono text-[0.6rem] text-[rgba(0,245,255,0.35)] tracking-[0.2em] mb-2">{step.ref}</p>
               <p className="font-orbitron text-[0.78rem] font-semibold text-white mb-2">{step.name}</p>
               <p className="text-[0.82rem] leading-[1.6] text-[rgba(230,230,230,0.45)]">{step.desc}</p>
