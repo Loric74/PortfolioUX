@@ -16,7 +16,7 @@ export default function ProcessSteps() {
         {processSteps.map((step, i) => (
           <div
             key={step.ref}
-            className="process-step flex-1 text-center relative z-[1] px-3 group max-[900px]:flex max-[900px]:items-start max-[900px]:gap-5 max-[900px]:text-left max-[900px]:pb-8"
+            className="process-step flex-1 text-center relative z-[1] px-3 group max-[900px]:flex max-[900px]:items-start max-[900px]:gap-5 max-[900px]:text-left max-[900px]:pb-[3rem]"
           >
             {/* Connector line (desktop) */}
             {i < processSteps.length - 1 && (
