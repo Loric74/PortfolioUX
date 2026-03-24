@@ -3,7 +3,7 @@ import { hardSkills, softSkills, languages } from '../../data/skills'
 
 function SkillItem({ children }) {
   return (
-    <span className="font-mono text-[0.8rem] text-[rgba(230,230,230,0.75)] py-2.5 border-b border-[rgba(0,245,255,0.05)] flex items-center gap-2.5 before:content-[\'\'] before:w-[5px] before:h-[5px] before:rounded-full before:bg-cyan before:shadow-cyan before:flex-shrink-0">
+    <span className="font-mono text-[0.8rem] max-[700px]:text-[0.72rem] text-[rgba(230,230,230,0.75)] py-2.5 border-b border-[rgba(0,245,255,0.05)] flex items-center gap-2.5 before:content-[\'\'] before:w-[5px] before:h-[5px] before:rounded-full before:bg-cyan before:shadow-cyan before:flex-shrink-0">
       {children}
     </span>
   )
@@ -23,7 +23,7 @@ export default function SkillsSection() {
       <div className="grid grid-cols-2 gap-12 max-[1000px]:grid-cols-1">
         {/* Hard skills */}
         <div>
-          <p className="font-orbitron text-[0.8rem] tracking-[0.2em] text-cyan uppercase pb-3 mb-5 border-b border-[rgba(0,245,255,0.1)]">
+          <p className="font-orbitron text-[0.8rem] max-[700px]:text-[0.72rem] tracking-[0.2em] text-cyan uppercase pb-3 mb-5 border-b border-[rgba(0,245,255,0.1)]">
             // Outils & Prototypage
           </p>
           <div className="flex flex-col">
@@ -54,7 +54,7 @@ export default function SkillsSection() {
             {softSkills.map((s) => (
               <span
                 key={s}
-                className="soft-tag font-mono text-[0.72rem] tracking-[0.08em] px-[18px] py-[9px] border border-[rgba(255,0,170,0.7)] text-magenta bg-[rgba(255,0,170,0.1)] shadow-[0_0_10px_rgba(255,0,170,0.15),inset_0_0_8px_rgba(255,0,170,0.05)] clip-btn-sm transition-all duration-300 cursor-default hover:border-magenta hover:text-white hover:bg-[rgba(255,0,170,0.22)]"
+                className="soft-tag font-mono text-[0.72rem] max-[700px]:text-[0.65rem] tracking-[0.08em] px-[18px] py-[9px] border border-[rgba(255,0,170,0.7)] text-magenta bg-[rgba(255,0,170,0.1)] shadow-[0_0_10px_rgba(255,0,170,0.15),inset_0_0_8px_rgba(255,0,170,0.05)] clip-btn-sm transition-all duration-300 cursor-default hover:border-magenta hover:text-white hover:bg-[rgba(255,0,170,0.22)]"
               >
                 {s}
               </span>
@@ -68,7 +68,7 @@ export default function SkillsSection() {
             {languages.map((l) => (
               <span
                 key={l.label}
-                className="font-mono text-[0.72rem] tracking-[0.08em] px-[18px] py-[9px] border border-[rgba(0,245,255,0.25)] text-[rgba(230,230,230,0.65)] bg-[rgba(0,245,255,0.03)] clip-btn-sm"
+                className="font-mono text-[0.72rem] max-[700px]:text-[0.65rem] tracking-[0.08em] px-[18px] py-[9px] border border-[rgba(0,245,255,0.25)] text-[rgba(230,230,230,0.65)] bg-[rgba(0,245,255,0.03)] clip-btn-sm"
               >
                 {l.flag} {l.label}
               </span>

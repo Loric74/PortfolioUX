@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { X } from 'lucide-react'
+import { X, Smartphone } from 'lucide-react'
 import { featuredProject, projects } from '../../data/projects'
 
 const allProjects = [featuredProject, ...projects]
@@ -50,8 +50,34 @@ function ProcessBlock({ block }) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-mono text-[0.72rem] tracking-[0.15em] px-6 py-3 border border-cyan text-cyan bg-[rgba(0,245,255,0.04)] transition-all duration-300 hover:bg-[rgba(0,245,255,0.12)] no-underline"
           >
+            {block.icon === 'mobile' && <Smartphone size={14} />}
             {block.text}
           </a>
+        </div>
+      )
+    case 'images':
+      return (
+        <div className="flex gap-3 my-4 flex-wrap">
+          {block.items.map((item, i) => (
+            <div key={i} className="flex-1 min-w-[180px] flex flex-col gap-1">
+              {item.label && <span className="font-mono text-[0.7rem] tracking-[0.15em] text-cyan">{item.label}</span>}
+              <img src={item.src} alt={item.label || ''} className="w-full max-h-[300px] object-contain rounded border border-[rgba(0,245,255,0.1)] bg-[rgba(0,0,0,0.15)]" />
+            </div>
+          ))}
+        </div>
+      )
+    case 'iframe':
+      return (
+        <div className="w-full my-4 overflow-hidden rounded border border-[rgba(0,245,255,0.1)]">
+          <iframe
+            src={block.src}
+            width="100%"
+            height={block.height || 432}
+            frameBorder="0"
+            scrolling="no"
+            allow="fullscreen; clipboard-read; clipboard-write"
+            allowFullScreen
+          />
         </div>
       )
     default:

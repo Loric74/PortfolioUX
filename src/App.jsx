@@ -3,6 +3,7 @@ import Cursor from './components/shared/Cursor'
 import BackgroundEffects from './components/shared/BackgroundEffects'
 import Navbar from './components/shared/Navbar'
 import Footer from './components/shared/Footer'
+import SideNav from './components/shared/SideNav'
 import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
@@ -12,7 +13,7 @@ export default function App() {
     <BrowserRouter>
       <Cursor />
       <BackgroundEffects showParticles />
-      <Navbar />
+      <SideNav />
       <main className="relative z-10">
         <Routes>
           <Route path="/" element={<Home />} />

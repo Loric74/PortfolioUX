@@ -10,7 +10,7 @@ export default function CtaBanner() {
           Travaillons <span className="text-cyan text-glow-cyan">ensemble</span>
         </h3>
         <p className="text-[0.95rem] text-[rgba(230,230,230,0.5)]">
-          Ouvert aux missions CDI, freelance et collaborations sur des projets ambitieux
+          Ouvert aux missions CDI et collaborations sur des projets ambitieux
         </p>
       </div>
 

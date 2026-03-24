@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="relative z-10 px-16 py-8 border-t border-[rgba(0,245,255,0.07)] flex items-center justify-between flex-wrap gap-5">
+    <footer className="relative z-[1] px-16 py-8 border-t border-[rgba(0,245,255,0.07)] flex items-center justify-between flex-wrap gap-5">
       <span className="font-orbitron text-[0.85rem] font-black text-[rgba(0,245,255,0.4)] tracking-[0.2em]">
         BL//UX
       </span>

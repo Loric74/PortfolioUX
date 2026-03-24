@@ -27,18 +27,18 @@ export default function RoadmapGrid() {
                 <span className="w-12 h-12 rounded-full border-2 flex items-center justify-center font-orbitron text-[1.1rem] font-black flex-shrink-0 border-[rgba(0,245,255,0.4)] text-cyan shadow-cyan bg-[rgba(0,245,255,0.05)]">
                   {item.weekNum}
                 </span>
-                <h3 className="font-orbitron text-[0.95rem] font-bold text-white leading-snug">{item.title}</h3>
+                <h3 className="font-orbitron text-[0.95rem] max-[700px]:text-[0.85rem] font-bold text-white leading-snug">{item.title}</h3>
               </div>
-              <p className="font-mono text-[0.72rem] tracking-[0.08em] mb-5 pb-4 border-b border-[rgba(0,245,255,0.07)] text-[rgba(230,230,230,0.45)]">
+              <p className="font-mono text-[0.72rem] max-[700px]:text-[0.65rem] tracking-[0.08em] mb-5 pb-4 border-b border-[rgba(0,245,255,0.07)] text-[rgba(230,230,230,0.45)]">
                 Objectif — {item.objective}
               </p>
 
-              <span className="font-mono text-[0.75rem] tracking-[0.2em] uppercase font-bold opacity-80 mb-2 mt-3.5 block text-cyan">
+              <span className="font-mono text-[0.75rem] max-[700px]:text-[0.67rem] tracking-[0.2em] uppercase font-bold opacity-80 mb-2 mt-3.5 block text-cyan">
                 // Actions
               </span>
               <div className="flex flex-col gap-1.5">
                 {item.actions.map((a, j) => (
-                  <span key={j} className="text-[0.84rem] leading-[1.6] text-[rgba(230,230,230,0.65)] flex items-start gap-2 before:content-['▸'] before:text-cyan before:text-[0.7rem] before:mt-[3px] before:flex-shrink-0">
+                  <span key={j} className="text-[0.84rem] max-[700px]:text-[0.75rem] leading-[1.6] text-[rgba(230,230,230,0.65)] flex items-start gap-2 before:content-['▸'] before:text-cyan before:text-[0.7rem] before:mt-[3px] before:flex-shrink-0">
                     {a}
                   </span>
                 ))}
@@ -46,12 +46,12 @@ export default function RoadmapGrid() {
 
               {item.tools.length > 0 && (
                 <>
-                  <span className="font-mono text-[0.75rem] tracking-[0.2em] uppercase font-bold opacity-80 mb-2 mt-3.5 block text-cyan">
+                  <span className="font-mono text-[0.75rem] max-[700px]:text-[0.67rem] tracking-[0.2em] uppercase font-bold opacity-80 mb-2 mt-3.5 block text-cyan">
                     // {item.week.includes('5') || item.week.includes('6') || item.week.includes('7') || item.week.includes('8') ? 'Plateformes' : 'Outils'}
                   </span>
                   <div className="flex gap-2 flex-wrap mt-2.5">
                     {item.tools.map((t) => (
-                      <span key={t} className="font-mono text-[0.62rem] px-3 py-[3px] border border-[rgba(0,245,255,0.15)] text-[rgba(230,230,230,0.5)] bg-[rgba(0,245,255,0.03)]">
+                      <span key={t} className="font-mono text-[0.62rem] max-[700px]:text-[0.56rem] px-3 py-[3px] border border-[rgba(0,245,255,0.15)] text-[rgba(230,230,230,0.5)] bg-[rgba(0,245,255,0.03)]">
                         {t}
                       </span>
                     ))}
@@ -59,7 +59,7 @@ export default function RoadmapGrid() {
                 </>
               )}
 
-              <div className="mt-4 px-3.5 py-3 text-[0.83rem] leading-[1.6] text-[rgba(230,230,230,0.6)] border-l-2 border-cyan bg-[rgba(0,245,255,0.03)]">
+              <div className="mt-4 px-3.5 py-3 text-[0.83rem] max-[700px]:text-[0.74rem] leading-[1.6] text-[rgba(230,230,230,0.6)] border-l-2 border-cyan bg-[rgba(0,245,255,0.03)]">
                 <strong className="text-cyan font-semibold">➡ Résultat attendu :</strong>{' '}
                 {item.result}
               </div>

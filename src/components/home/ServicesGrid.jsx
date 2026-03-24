@@ -31,13 +31,13 @@ export default function ServicesGrid() {
                   <Icon size={34} strokeWidth={1.5} />
                 </span>
               )}
-              <p className="font-mono text-[0.6rem] text-[rgba(0,245,255,0.3)] tracking-[0.3em] mb-2.5">
+              <p className="font-mono text-[0.6rem] max-[700px]:text-[0.55rem] text-[rgba(0,245,255,0.3)] tracking-[0.3em] mb-2.5">
                 // {s.num}
               </p>
-              <h3 className="font-orbitron text-[0.9rem] font-semibold text-white mb-3.5 leading-snug">
+              <h3 className="font-orbitron text-[0.9rem] max-[700px]:text-[0.8rem] font-semibold text-white mb-3.5 leading-snug">
                 {s.name}
               </h3>
-              <p className="text-[0.88rem] leading-[1.7] text-[rgba(230,230,230,0.55)]">
+              <p className="text-[0.88rem] max-[700px]:text-[0.77rem] leading-[1.7] text-[rgba(230,230,230,0.55)]">
                 {s.desc}
               </p>
             </div>

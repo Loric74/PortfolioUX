@@ -7,7 +7,7 @@ export default function HeroSection() {
       {/* Left */}
       <div>
         <div
-          className="inline-flex items-center gap-2.5 font-mono text-[0.7rem] tracking-[0.3em] text-magenta uppercase px-[18px] py-2 border border-[rgba(255,0,170,0.3)] bg-[rgba(255,0,170,0.04)] mb-8"
+          className="inline-flex items-center gap-2.5 font-mono text-[0.7rem] max-[700px]:text-[0.6rem] tracking-[0.3em] text-magenta uppercase px-[18px] py-2 border border-[rgba(255,0,170,0.3)] bg-[rgba(255,0,170,0.04)] mb-8"
           style={{ animation: 'fadeUp 0.8s ease both' }}
         >
           <span className="w-[7px] h-[7px] rounded-full bg-magenta shadow-mag animate-pulse-dot" />
@@ -25,14 +25,14 @@ export default function HeroSection() {
         </h1>
 
         <p
-          className="font-mono text-[0.9rem] tracking-[0.3em] text-[rgba(230,230,230,0.45)] uppercase mb-8 mt-4"
+          className="font-mono text-[0.9rem] max-[700px]:text-[0.75rem] tracking-[0.3em] text-[rgba(230,230,230,0.45)] uppercase mb-8 mt-4"
           style={{ animation: 'fadeUp 0.8s ease 0.3s both' }}
         >
           // UX Designer Junior
         </p>
 
         <p
-          className="text-[1.05rem] leading-[1.8] text-[rgba(230,230,230,0.65)] max-w-[480px] mb-11 border-l-2 border-[rgba(0,245,255,0.2)] pl-5"
+          className="text-[1.05rem] max-[700px]:text-[0.9rem] leading-[1.8] text-[rgba(230,230,230,0.65)] max-w-[480px] mb-11 border-l-2 border-[rgba(0,245,255,0.2)] pl-5"
           style={{ animation: 'fadeUp 0.8s ease 0.45s both' }}
         >
           Je conçois des expériences numériques qui mettent l'humain au centre. Recherche, prototypage, tests — chaque décision de design est guidée par les données et l'empathie.
@@ -41,13 +41,13 @@ export default function HeroSection() {
         <div className="flex gap-[18px] flex-wrap" style={{ animation: 'fadeUp 0.8s ease 0.6s both' }}>
           <Link
             to="/projects"
-            className="font-mono text-[0.78rem] tracking-[0.18em] px-8 py-3.5 uppercase border border-cyan text-cyan bg-transparent shadow-cyan clip-btn transition-all duration-300 hover:bg-cyan hover:text-bg"
+            className="font-mono text-[0.78rem] max-[700px]:text-[0.68rem] tracking-[0.18em] px-8 py-3.5 uppercase border border-cyan text-cyan bg-transparent shadow-cyan clip-btn transition-all duration-300 hover:bg-cyan hover:text-bg"
           >
             Voir mes projets
           </Link>
           <Link
             to="/about"
-            className="font-mono text-[0.78rem] tracking-[0.18em] px-8 py-3.5 uppercase border border-magenta text-magenta bg-transparent shadow-mag clip-btn transition-all duration-300 hover:bg-magenta hover:text-bg"
+            className="font-mono text-[0.78rem] max-[700px]:text-[0.68rem] tracking-[0.18em] px-8 py-3.5 uppercase border border-magenta text-magenta bg-transparent shadow-mag clip-btn transition-all duration-300 hover:bg-magenta hover:text-bg"
           >
             À propos
           </Link>

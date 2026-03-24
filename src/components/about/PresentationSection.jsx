@@ -128,7 +128,7 @@ export default function PresentationSection() {
               className="font-mono text-[0.78rem] tracking-[0.18em] px-8 py-3.5 uppercase border border-cyan text-cyan bg-transparent shadow-cyan clip-btn transition-all duration-300 hover:bg-cyan hover:text-bg flex items-center gap-2"
             >
               <Mail size={14} />
-              contact@belmainloric.fr
+              loricbelmain@gmail.com
             </a>
             <a
               href="/CV_Loric_Belmain.pdf"

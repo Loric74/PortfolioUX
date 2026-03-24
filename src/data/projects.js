@@ -40,17 +40,17 @@ export const featuredProject = {
     { type: "text", text: "Les contenus ont été structurés autour des usages principaux : consulter un signe, parcourir le vocabulaire, mémoriser via le quiz, retrouver ses favoris et accéder aux informations." },
     { type: "text", text: "Le glossaire est organisé par catégories visuelles et filtres simples afin de faciliter la recherche et la mémorisation." },
     { type: "text", text: "Des wireframes basse fidélité ont permis de définir la hiérarchie des écrans, la navigation et l'emplacement des contenus vidéo." },
-    { type: "placeholder", text: "↑ Visuels à placer — wireframes" },
+    { type: "iframe", src: "https://miro.com/app/live-embed/uXjVJ7ZzSKw=/?embedMode=view_only_without_ui&moveToViewport=-14354,2367,5259,3913&embedId=844237020976", height: 432 },
 
     { type: "step-label", text: "Concevoir" },
     { type: "step-title", text: "Maquettes UI" },
     { type: "text", text: "À partir des wireframes validés, j'ai conçu les maquettes haute fidélité de l'application. Le design visuel a été pensé pour inspirer confiance et bienveillance, rester lisible sur mobile et mettre en valeur la vidéo comme média principal d'apprentissage." },
     { type: "text", text: "L'interface privilégie des icônes explicites, des catégories visuelles différenciées et une hiérarchie claire des informations." },
-    { type: "placeholder", text: "↑ Visuels à placer — maquettes" },
+
     { type: "step-title", text: "Prototype interactif" },
     { type: "text", text: "Un prototype interactif complet a été réalisé sur Figma afin de simuler les parcours principaux : navigation dans le glossaire, consultation d'un signe en vidéo, ajout en favoris, accès au quiz et navigation entre catégories." },
     { type: "text", text: "Ce prototype permet de tester la fluidité des parcours et la compréhension de l'interface dans un contexte d'usage mobile. Il sert également de support de présentation et de validation du concept." },
-    { type: "figma-link", href: "https://www.figma.com/proto/5zGOf49vAteTeuTEcGCEFN/Design---Les-Bambinets?page-id=7587%3A2&node-id=7590-889&p=f&viewport=577%2C-337%2C0.41&t=yc6Jyy0IVEE0bz7k-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7590%3A889&show-proto-sidebar=1", text: "Voir le prototype sur Figma →" },
+    { type: "figma-link", href: "https://www.figma.com/proto/5zGOf49vAteTeuTEcGCEFN/Design---Les-Bambinets?page-id=7587%3A2&node-id=7590-889&p=f&viewport=577%2C-337%2C0.41&t=P0OEI5vZehuibS6d-8&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7590%3A889&hide-ui=1", text: "Voir le prototype sur Figma →" },
   ],
   result: "Prototype fonctionnel d'application d'apprentissage du vocabulaire en langue des signes pour parents et professionnels de la petite enfance. L'expérience facilite l'accès aux signes du quotidien et leur appropriation progressive dans les interactions avec l'enfant. Interface bienveillante, lisible sur mobile, mettant en valeur la vidéo comme média principal d'apprentissage.",
 }
@@ -60,9 +60,10 @@ export const projects = [
     id: "santementale",
     num: "// 002",
     type: "UX Architecture",
-    year: "2024",
+    year: "2026",
     tags: ["UX Architecture", "Santé mentale"],
     filterTags: ["research", "ux-architecture"],
+    cover: "/banner_equi_libre.png",
     title: "Equi-libre — Application santé mentale",
     desc: "Structuration de l'information d'une application mobile pour un institut de recherche. Analyse concurrentielle, tri de cartes, arborescence et wireframes.",
     tools: ["Miro", "Figma"],
@@ -96,6 +97,11 @@ export const projects = [
         "les attentes en termes d'organisation",
         "les logiques de navigation perçues",
       ]},
+      { type: "images", items: [
+        { src: "/tri_de_cartes_elisa.jpg", label: "Elisa" },
+        { src: "/tri_de_cartes_thomas.jpg", label: "Thomas" },
+        { src: "/tri_de_cartes_francoise.jpg", label: "Françoise" },
+      ]},
 
       { type: "step-title", text: "Architecture de l'information" },
       { type: "text", text: "Les résultats du tri de cartes ont été croisés avec les enseignements de l'analyse concurrentielle afin de définir une architecture adaptée aux modèles mentaux des utilisateurs. La structure proposée s'inspire notamment :" },
@@ -109,6 +115,7 @@ export const projects = [
         "introduire une recherche par objectif (ex : détente rapide, concentration)",
         "regrouper les contenus par expériences ou besoins",
       ]},
+      { type: "iframe", src: "https://miro.com/app/live-embed/uXjVJRkaBjw=/?embedMode=view_only_without_ui&moveToViewport=-2021,-1645,5542,2864&embedId=611361279136", height: 432 },
 
       { type: "step-label", text: "Concevoir" },
       { type: "step-title", text: "Wireframes" },
@@ -120,7 +127,7 @@ export const projects = [
         "l'organisation des contenus",
       ]},
       { type: "text", text: "Ces wireframes constituent la base de conception de l'interface future." },
-      { type: "placeholder", text: "↑ Visuels à placer — wireframes" },
+      { type: "iframe", src: "https://miro.com/app/live-embed/uXjVJJ8d3HA=/?embedMode=view_only_without_ui&moveToViewport=-16839,528,7767,9814&embedId=200744027627", height: 432 },
     ],
     result: "Architecture de l'information structurée, arborescence validée par card sorting, wireframes fonctionnels couvrant les parcours principaux.",
     metrics: [
@@ -133,7 +140,7 @@ export const projects = [
     id: "avenirs",
     num: "// 003",
     type: "App Mobile · Landing Page",
-    year: "2024",
+    year: "2026",
     tags: ["UX Design", "No-code"],
     filterTags: ["no-code", "mobile"],
     title: "Avenirs — Application & Landing Page",
@@ -168,6 +175,8 @@ export const projects = [
       ]},
       { type: "text", text: "Cet espace vise à renforcer le lien entre les familles et les activités proposées par l'association." },
 
+      { type: "figma-link", href: "https://avenir-app-mfly.glide.page", text: "Voir l'application →", icon: "mobile" },
+
       { type: "step-label", text: "Concevoir" },
       { type: "step-title", text: "Landing page de l'association" },
       { type: "text", text: "Une landing page destinée au grand public a été conçue afin de présenter l'association et ses actions. Ses objectifs principaux sont :" },
@@ -187,6 +196,7 @@ export const projects = [
         "les actions nécessaires pour finaliser la contribution",
       ]},
       { type: "text", text: "Cet outil facilite la compréhension du parcours utilisateur et permet d'anticiper les points de friction potentiels." },
+      { type: "iframe", src: "https://miro.com/app/live-embed/uXjVI2K-zrQ=/?embedMode=view_only_without_ui&moveToViewport=117,-760,2105,1576&embedId=425934461148", height: 432 },
     ],
     result: "Une première version fonctionnelle de l'application mobile destinée aux parents, une landing page publique facilitant la présentation de l'association et les actions de don, ainsi qu'un parcours utilisateur de don modélisé pour optimiser l'expérience des futurs contributeurs.",
     metrics: [
