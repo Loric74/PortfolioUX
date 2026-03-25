@@ -67,7 +67,7 @@ export default function PresentationSection() {
               { k: 'Formation', v: 'Openclassrooms UX' },
               { k: 'Localisation', v: 'France 🇫🇷' },
               { k: 'Statut', v: 'Open to work' },
-              { k: 'Langues', v: 'FR · EN C1' },
+              { k: 'Langues', v: 'FR · EN' },
             ].map(({ k, v }) => (
               <div key={k} className="flex justify-between py-2.5 border-b border-[rgba(0,245,255,0.06)]">
                 <span className="font-mono text-[0.65rem] text-[rgba(230,230,230,0.35)] tracking-[0.1em] uppercase">{k}</span>

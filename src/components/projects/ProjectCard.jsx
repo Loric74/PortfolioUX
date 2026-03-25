@@ -12,7 +12,7 @@ export default function ProjectCard({ project, onOpenModal }) {
       {/* Image area */}
       <div className="w-full bg-bg2 flex items-center justify-center relative overflow-hidden border-r border-[rgba(0,245,255,0.07)] h-full min-h-[180px] max-[700px]:h-[180px] max-[700px]:border-r-0 max-[700px]:border-b max-[700px]:border-b-[rgba(0,245,255,0.07)]">
         {p.cover
-          ? <img src={p.cover} alt={p.title} className="absolute inset-0 w-full h-full object-contain" />
+          ? <img src={p.cover} alt={p.title} className={`absolute inset-0 w-full h-full ${p.coverClass || 'object-cover object-top'}`} />
           : <>
               <div className="absolute inset-0 bg-[linear-gradient(rgba(0,245,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(0,245,255,0.04)_1px,transparent_1px)] bg-[24px_24px]" />
               <div className="absolute inset-0 bg-gradient-to-br from-[rgba(0,245,255,0.04)] via-transparent to-[rgba(255,0,170,0.04)]" />

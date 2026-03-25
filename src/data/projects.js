@@ -63,7 +63,8 @@ export const projects = [
     year: "2026",
     tags: ["UX Architecture", "Santé mentale"],
     filterTags: ["research", "ux-architecture"],
-    cover: "/banner_equi_libre.png",
+    cover: "/equi_libre.png",
+    coverClass: "object-contain",
     title: "Equi-libre — Application santé mentale",
     desc: "Structuration de l'information d'une application mobile pour un institut de recherche. Analyse concurrentielle, tri de cartes, arborescence et wireframes.",
     tools: ["Miro", "Figma"],
@@ -138,6 +139,7 @@ export const projects = [
   },
   {
     id: "avenirs",
+    cover: "/landingpage_avenirs.jpg",
     num: "// 003",
     type: "App Mobile · Landing Page",
     year: "2026",

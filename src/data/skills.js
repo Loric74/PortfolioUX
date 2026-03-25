@@ -35,7 +35,7 @@ export const softSkills = [
 
 export const languages = [
   { flag: "🇫🇷", label: "Français — Natif" },
-  { flag: "🇬🇧", label: "Anglais — C1" },
+  { flag: "🇬🇧", label: "Anglais" },
 ]
 
 export const testimonials = [
