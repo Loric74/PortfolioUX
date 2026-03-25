@@ -1,6 +1,6 @@
 export default function PageHeader({ label, title, titleHighlight, subtitle, meta }) {
   return (
-    <div className="relative z-10 px-16 pt-[140px] pb-[60px] overflow-hidden after:content-[\'\'] after:absolute after:bottom-0 after:left-16 after:right-16 after:h-px after:bg-gradient-to-r after:from-transparent after:via-[rgba(0,245,255,0.15)] after:to-transparent max-[760px]:px-5">
+    <div className="relative z-10 px-16 pt-[60px] pb-[24px] overflow-hidden after:content-[\'\'] after:absolute after:bottom-0 after:left-16 after:right-16 after:h-px after:bg-gradient-to-r after:from-transparent after:via-[rgba(0,245,255,0.15)] after:to-transparent max-[760px]:px-5">
       <p className="font-mono text-[0.68rem] tracking-[0.4em] text-cyan opacity-50 uppercase mb-3 flex items-center gap-3">
         <span className="w-8 h-px bg-gradient-to-r from-transparent to-cyan" />
         {label}
