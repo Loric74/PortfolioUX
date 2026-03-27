@@ -14,9 +14,7 @@ export default function Navbar() {
       </div>
 
       <a
-        href="https://mail.google.com/mail/?view=cm&to=loricbelmain@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="mailto:loricbelmain@gmail.com"
         className="font-mono text-[0.72rem] tracking-[0.15em] px-[22px] py-[9px] border border-cyan text-cyan bg-transparent uppercase no-underline transition-all duration-300 clip-btn-sm hover:bg-cyan hover:text-bg hover:shadow-cyan"
       >
         Contact
