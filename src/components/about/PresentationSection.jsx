@@ -134,7 +134,7 @@ export default function PresentationSection() {
                 loricbelmain@gmail.com
               </button>
               <a
-                href="/CV_Loric_Belmain.pdf"
+                href="/CV_Loric_Belmain_V5_light.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-mono text-[0.78rem] tracking-[0.18em] px-8 py-3.5 uppercase border border-magenta text-magenta bg-transparent shadow-mag clip-btn transition-all duration-300 hover:bg-magenta hover:text-bg flex items-center gap-2"
